@@ -6,12 +6,15 @@ const employeesAPI = require('./routes/employees');
 
 const registerEmployee = require('./routes/register');
  
+const auth = require('./routes/auth');
+
 app.use(bodyParser.json())
 
 app.use('/api/employees', employeesAPI)
 
 app.use('/register', registerEmployee)
 
+app.use('/login', auth)
 
 
 app.listen(3000, () => {
