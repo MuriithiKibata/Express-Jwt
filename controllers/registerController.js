@@ -11,6 +11,9 @@ const path = require("path")
 
 const bcrypt = require("bcrypt")
 
+
+
+
 const handleNewUser = async (req, res) => {
     const {username, password} = req.body;
 

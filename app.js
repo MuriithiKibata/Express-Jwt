@@ -17,6 +17,6 @@ app.use('/register', registerEmployee)
 app.use('/login', auth)
 
 
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log('listening on port 3000');
 })
